@@ -10,7 +10,7 @@ repository:
 
   delete_branch_on_merge: true
 
-# Does not currently work. Import the ruleset manually.
+# Rulesets do not currently work. Import the ruleset manually, using json files.
 # rulesets:
 #   - name: default-ruleset
 #     target: branch
