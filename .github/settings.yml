@@ -8,6 +8,8 @@ repository:
   squash_merge_commit_title: PR_TITLE
   squash_merge_commit_message: PR_BODY
 
+  delete_branch_on_merge: true
+
 # Does not currently work. Import the ruleset manually.
 # rulesets:
 #   - name: default-ruleset
