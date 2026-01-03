@@ -1,0 +1,24 @@
+repository:
+  default_branch: main
+
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false
+
+  squash_merge_commit_title: PR_TITLE
+  squash_merge_commit_message: PR_BODY
+
+branches:
+  - name: main
+    protection:
+      enforce_admins: false
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        require_code_owner_reviews: true
+
+  - name: "releases/*"
+    protection:
+      enforce_admins: false
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        require_code_owner_reviews: true
